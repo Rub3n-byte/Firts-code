@@ -43,20 +43,41 @@ html, body {
 .s_maps {
     display: flex;
     gap: 0;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    margin-right: 7%;
 }
-#izquierda {
+#d_izquierda {
     margin-left: 7%;
+    flex-basis: 50%;
 }
-#izquierda h1 {
+#d_izquierda h1 {
     font-size: 40px;
     margin: 2%;
 }
-#izquierda p {
+#d_izquierda p {
     font-size: 25px;
     margin: 2%;
 }
 
-#derecha {
+#d_derecha {
     margin-right: 7%;
+}
+
+.s_ante_footer {
+    display: flex;
+    gap: 20%;
+    flex-wrap: wrap;
+    background-color: #808080;
+}
+
+#d_left {
+    justify-content: center;
+    margin-left: 7%;
+}
+
+.s_right {
+    display: flex;
+    gap: 100%;
+    flex-wrap: nowrap;
 }
