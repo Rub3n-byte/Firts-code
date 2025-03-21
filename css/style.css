@@ -43,7 +43,12 @@ html, body {
 .s_maps {
     display: flex;
     gap: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+#izquierda {
     margin-left: 7%;
+}
+
+#derecha {
     margin-right: 7%;
 }
