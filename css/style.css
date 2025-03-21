@@ -48,6 +48,14 @@ html, body {
 #izquierda {
     margin-left: 7%;
 }
+#izquierda h1 {
+    font-size: 40px;
+    margin: 2%;
+}
+#izquierda p {
+    font-size: 25px;
+    margin: 2%;
+}
 
 #derecha {
     margin-right: 7%;
