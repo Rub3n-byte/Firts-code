@@ -39,3 +39,11 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+
+.s_maps {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    margin-right: 7%;
+}
