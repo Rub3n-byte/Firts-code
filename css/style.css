@@ -66,18 +66,42 @@ html, body {
 
 .s_ante_footer {
     display: flex;
-    gap: 20%;
-    flex-wrap: wrap;
+    gap: 6%;
     background-color: #808080;
 }
 
 #d_left {
     justify-content: center;
+    margin-top: 1%;
     margin-left: 7%;
+    flex-basis: 50%;
 }
 
 .s_right {
     display: flex;
-    gap: 100%;
     flex-wrap: nowrap;
+    margin-right: 7%;
+    flex-basis: 50%;
+}
+
+.d_right {
+    margin-right: 7%;
+}
+#d_soporte {
+    flex-basis: 50%;
+}
+#d_diseno {
+    flex-basis: 50%;
+}
+
+footer {
+    width: 100%;
+    color: #EFEFEF;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 9px;
 }
