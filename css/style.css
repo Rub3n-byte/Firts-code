@@ -33,10 +33,6 @@ img {
     justify-content: space-between;
 }
 
-.d_github {
-    flex-basis: 33%;
-}
-
 #d_feedback {
     width: 100%;
     color: white;
@@ -116,8 +112,31 @@ footer {
 }
 
 @media (max-width: 700px) {
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .s_github {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-basis: 50% !important; /* Dos columnas siempre */
+        gap: 15% !important;
+    }
     .d_github {
-        flex-wrap: wrap;
-        flex-basis: 50%; /* Dos columnas siempre */
+        display: flex !important;
+        flex-wrap: wrap !important;
+        flex-basis: 50% !important; /* Dos columnas siempre */
+    }
+    .s_maps {
+        display: block !important;
+    }
+    #d_izquierda {
+        margin-left: 0 !important;
+    }
+    #d_derecha {
+        margin-right: 0 !important;
+    }
+    .s_ante_footer {
+        display: block !important;
     }
 }
