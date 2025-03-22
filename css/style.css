@@ -117,15 +117,23 @@ footer {
         padding: 0 !important;
     }
     .s_github {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        flex-basis: 50% !important; /* Dos columnas siempre */
-        gap: 15% !important;
+        display: table;
+        width: 100%; /* Ocupa todo el ancho */
+        border-spacing: 10px; /* Espaciado entre filas */
+    }
+    .row {
+        display: table-row; /* Cada fila definida explícitamente */
     }
     .d_github {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        flex-basis: 50% !important; /* Dos columnas siempre */
+        display: table-cell;
+        width: 50%; /* Dos columnas por fila */
+        text-align: center;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+    .d_github img {
+        width: 100%; /* Imagen ocupa el ancho de la celda */
+        height: auto; /* Mantiene proporción */
     }
     .s_maps {
         display: block !important;
