@@ -10,6 +10,8 @@ img {
     height: auto;
 }
 
+
+/* Header */
 #d_header {
     width: 100%;
     height: 100%;
@@ -23,6 +25,7 @@ img {
     align-items: center;
 }
 
+/* Seccion con todas las fotos de github */
 .s_github {
     display: flex;
     gap: 5%;
@@ -45,6 +48,8 @@ img {
     align-items: center;
 }
 
+/* Seccion del texto y mapa a la derecha */
+/* s_maps es para toda la seccion, dentro de ella se encuentran d_izquierda (el texto) y d_derecha (el mapa) */
 .s_maps {
     display: flex;
     gap: 0;
@@ -69,6 +74,8 @@ img {
     margin-right: 7%;
 }
 
+/* Seccion antes del footer */
+
 .s_ante_footer {
     display: flex;
     gap: 6%;
@@ -81,7 +88,7 @@ img {
     margin-left: 7%;
     flex-basis: 50%;
 }
-
+/* Seccion de soporte y diseño */
 .s_right {
     display: flex;
     flex-wrap: nowrap;
@@ -111,40 +118,48 @@ footer {
     font-size: 9px;
 }
 
+/* Media queries */
+
 @media (max-width: 700px) {
     html {
         margin: 0 !important;
         padding: 0 !important;
     }
+    /* Vi esta opcion, y me fue mas facil que con display flex */
+    /* Seccion */
     .s_github {
         display: table;
-        width: 100%; /* Ocupa todo el ancho */
-        border-spacing: 10px; /* Espaciado entre filas */
+        width: 100%;
+        border-spacing: 10px;
     }
+    /* Fila */
     .row {
-        display: table-row; /* Cada fila definida explícitamente */
+        display: table-row;
     }
+    /* Columna, utiliza 50% por 0 bordes y padding */
     .d_github {
         display: table-cell;
-        width: 50%; /* Dos columnas por fila */
+        width: 50%; 
         text-align: center;
         vertical-align: middle;
         box-sizing: border-box;
     }
     .d_github img {
-        width: 100%; /* Imagen ocupa el ancho de la celda */
-        height: auto; /* Mantiene proporción */
+        width: 100%;
+        height: auto;
     }
+    /* El resto, utilizo el display block ya que no necesito flex */
     .s_maps {
         display: block !important;
     }
+    .s_ante_footer {
+        display: block !important;
+    }
+    /* Seccion del texto y del mapa */
     #d_izquierda {
         margin-left: 0 !important;
     }
     #d_derecha {
         margin-right: 0 !important;
-    }
-    .s_ante_footer {
-        display: block !important;
     }
 }
